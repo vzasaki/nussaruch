@@ -1,0 +1,68 @@
+/* ฟอร์มข้อเสนอแนะ */
+.feedback-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form label {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+
+/* ปรับให้ปุ่มกลับสู่หน้าหลักอยู่ข้างล่าง */
+.back-to-home {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-home:hover {
+    background-color: #45a049;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

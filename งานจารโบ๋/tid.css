@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.university-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.university-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+}
+
+.university-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.university-card h3 {
+    color: #007BFF;
+    margin-top: 10px;
+}
+
+.university-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.university-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.university-card img {
+    width: 100%;
+    max-height: 120px; /* จำกัดความสูงของรูป */
+    object-fit: contain; /* ให้ภาพไม่ถูกครอป */
+    padding: 10px; /* เพิ่มระยะห่าง */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ทำให้รองรับมือถือ */
+@media (max-width: 768px) {
+    .university-container {
+        grid-template-columns: 1fr;
+    }
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-button button:hover {
+    background-color: #45a049;
+  }
+.university-card h3 a {
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    color: #007bff; /* เปลี่ยนสีลิงก์ */
+}
+
+.university-card h3 a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อโฮเวอร์ */
+}

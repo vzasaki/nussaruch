@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เติมเงิน</title>
+    <link rel="stylesheet" href="terrm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>เติมเงินเข้าสู่ระบบ</h1>
+        <form action="success.html" method="get"> <!-- เปลี่ยน action เป็นหน้าถัดไป -->
+            <label for="amount">จำนวนเงิน (บาท):</label>
+            <input type="number" id="amount" name="amount" min="0" >
+            
+            <label for="payment">ช่องทางการชำระเงิน:</label>
+            <select id="payment" name="payment" required>
+                <option value="bank">โอนผ่านธนาคาร</option>
+                <option value="wallet">True Wallet</option>
+                <option value="credit">บัตรเครดิต/เดบิต</option>
+            </select>
+            
+            <button type="submit">ยืนยันการเติมเงิน</button> <!-- ปุ่มยืนยัน -->
+        </form>
+        
+        <a href="home.html" class="back-button">กลับไปหน้าหลัก</a>
+    </div>
+</body>
+</html>

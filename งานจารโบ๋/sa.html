@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อเสนอแนะ</title>
+    <link rel="stylesheet" href="sa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ข้อเสนอแนะ</h1>
+        <section class="feedback">
+            <p>กรุณากรอกข้อเสนอแนะหรือความคิดเห็นของท่านด้านล่าง:</p>
+            <form action="submit_feedback.php" method="post" class="feedback-form">
+                <label for="name">ชื่อ-นามสกุล:</label>
+                <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อของคุณ">
+
+                <label for="email">อีเมล (ถ้ามี):</label>
+                <input type="email" id="email" name="email" placeholder="กรุณากรอกอีเมลของคุณ">
+
+                <label for="feedback">ข้อเสนอแนะหรือความคิดเห็น:</label>
+                <textarea id="feedback" name="feedback" placeholder="กรุณากรอกข้อเสนอแนะหรือความคิดเห็นของคุณ"></textarea>
+
+                <a href="sasuc.html" class="submit-button">ส่งข้อเสนอแนะ</a>
+            </form>
+        </section>
+
+        <a href="home.html" class="back-to-home">กลับสู่หน้าหลัก</a>
+    </div>
+</body>
+</html>
