@@ -1,0 +1,115 @@
+/* รวมการตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* หัวข้อหลัก */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ตกแต่งตาราง */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* กำหนดขอบและการจัดรูปแบบของเซลล์ในตาราง */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* เพิ่มสีพื้นหลังของ header */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* แก้ไขการเลื่อนแถว */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* การจัดแต่งลิงค์ */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* เอฟเฟกต์เมื่อ hover */
+a:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+/* เพิ่มการตกแต่งสำหรับปุ่มเมนู */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* เอฟเฟกต์เมื่อ hover ปุ่ม */
+button:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+/* ปรับตำแหน่งของฟุตเตอร์ */
+footer {
+    margin-top: 40px;
+}
+
+/* กำหนดลักษณะของลิงค์ในฟุตเตอร์ */
+footer a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #4CAF50; /* เปลี่ยนสีพื้นหลังเป็นเขียว */
+    color: white; /* สีข้อความเป็นขาว */
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* เอฟเฟกต์เมื่อ hover */
+footer a:hover {
+    background-color: #388e3c; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: translateY(-2px);
+}

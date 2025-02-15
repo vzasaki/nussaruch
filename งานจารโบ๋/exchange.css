@@ -1,0 +1,136 @@
+/* ตั้งค่าเริ่มต้นให้กับทุกๆ องค์ประกอบ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* จัดการกับ container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* หัวข้อหลัก */
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: #2c3e50;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* กำหนดพื้นที่สำหรับการ์ดแต่ละประเทศ */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* กำหนดสไตล์ของการ์ด */
+.topic-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+.topic-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ข้อความในการ์ด */
+.topic-card p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* เพิ่มการยกขึ้นเมื่อโฮเวอร์ */
+.topic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* เพิ่มการตกแต่งพิเศษเมื่อการ์ด hover */
+.topic-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: 15px;
+}
+
+/* ปุ่มกลับไปที่หน้าหลัก */
+.back-button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+.back-button:active {
+    transform: scale(0.98);
+}
+
+/* การแสดงผลในอุปกรณ์ที่มีหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .topic-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .back-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}

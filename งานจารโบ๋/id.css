@@ -1,0 +1,90 @@
+/* กำหนดการตั้งค่าพื้นฐานให้กับหน้า */
+body, html {
+    height: 100%; /* กำหนดให้ความสูงของหน้าเต็มจอ */
+    margin: 0; /* ลบช่องว่างจากขอบหน้าจอ */
+    display: flex; /* ใช้ flexbox ในการจัดตำแหน่ง */
+    justify-content: center; /* จัดแนวนอนให้ฟอร์มอยู่กลางหน้า */
+    align-items: center; /* จัดแนวตั้งให้ฟอร์มอยู่กลางหน้า */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ของหน้า */
+    background-color: #8f8f8f; /* กำหนดสีพื้นหลังของหน้า */
+    background-image: url("picture/RERU459-scaled-1.jpg"); /* ใส่ตำแหน่งไฟล์รูปภาพ */
+    background-size: cover; /* ปรับขนาดภาพให้เต็มจอ */
+    background-position: center; /* จัดตำแหน่งให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  }
+  
+  /* สไตล์สำหรับฟอร์ม */
+  .form-container {
+    background-color: white; /* สีพื้นหลังของฟอร์ม */
+    padding: 40px; /* ช่องว่างภายในฟอร์ม */
+    border-radius: 8px; /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาของฟอร์ม */
+    width: 300px; /* กำหนดความกว้างของฟอร์ม */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* เพิ่มกรอบ */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  }
+  
+  /* สไตล์สำหรับหัวข้อ */
+  h2 {
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+  }
+  
+  /* สไตล์สำหรับ label */
+  label {
+    display: block; /* จัดให้ label เป็นบล็อก */
+    margin-bottom: 8px; /* ช่องว่างด้านล่างของ label */
+  }
+  
+  /* สไตล์สำหรับ input และ select */
+  input, select {
+    width: 100%; /* กำหนดความกว้างเต็มที่ */
+    padding: 8px; /* ช่องว่างภายใน input */
+    margin-bottom: 10px; /* ช่องว่างระหว่างช่องกรอกข้อมูล */
+    border: 1px solid #000000; /* กำหนดขอบสีเทา */
+    border-radius: 4px; /* ขอบมน */
+  }
+  
+  /* สไตล์สำหรับปุ่ม */
+  input[type="submit"], .buttonBack {
+    width: 100%; /* กำหนดความกว้างเต็มที่ */
+    padding: 10px; /* ช่องว่างภายในปุ่ม */
+    background-color: #42a14f; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีข้อความในปุ่ม */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 4px; /* ขอบมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางบนปุ่ม */
+    align-items: center; /* จัดปุ่มตรงกลางฟอร์ม */
+    justify-content: center;
+    display: flex;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+  }
+
+  /* สไตล์เมื่อ hover บนปุ่ม */
+  input[type="submit"]:hover, .buttonBack:hover {
+    background-color: #45a049; /* สีพื้นหลังของปุ่มเมื่อ hover */
+  }
+   
+   
+      /* เมื่อชี้เมาส์ */
+      input[type="button"]:hover {
+        background-color: #35743d; /* สีเมื่อชี้เมาส์ */
+        cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางบนปุ่ม */
+      }
+      /* สีปุ่มเมื่ออยู่ในสถานะคูลดาวน์ */
+      input[type="button"].cooldown {
+        background-color: #6d6d6d; /* สีระหว่างคูลดาวน์ */
+        cursor: default; /* เปลี่ยนเคอร์เซอร์เป็นไม่อนุญาต */
+      }
+ /* สไตล์ปุ่ม */
+ input[type="button"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* สีปุ่มปกติ */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+  }
+  
+  

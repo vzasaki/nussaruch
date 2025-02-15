@@ -1,0 +1,59 @@
+/* CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    background-color: #f0f0f0; /* เพิ่มสีพื้นหลังให้ดูสะอาดตา */
+  }
+  
+  .picture {
+    display: flex;
+    flex-wrap: wrap; /* ให้รูปภาพไหลไปตามแนวนอน */
+    justify-content: center; /* จัดรูปภาพให้อยู่กึ่งกลางแนวนอน */
+    align-items: center; /* จัดรูปภาพให้อยู่กึ่งกลางแนวตั้ง */
+    max-width: 100%;
+    max-height: 100%;
+    gap: 20px; /* เพิ่มช่องว่างระหว่างภาพ */
+  }
+  
+  .picture img {
+    width: 100%;
+    height: auto; /* ทำให้ขนาดภาพยืดหยุ่นตามความกว้าง */
+    max-width: 250px; /* กำหนดขนาดสูงสุดให้กับแต่ละรูป */
+    border-radius: 10px; /* ทำมุมให้มน */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงาที่เบลอเพื่อทำให้ภาพเด่นขึ้น */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเคลื่อนไหวเมื่อเอามือไปวางบนภาพ */
+  }
+  
+  .picture img:hover {
+    transform: scale(1.05); /* ขยายภาพเมื่อเอาเมาส์ไปวาง */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเข้มขึ้นเมื่อวางเมาส์ */
+  }
+  
+  @media (max-width: 768px) {
+    .picture img {
+      max-width: 100%; /* ปรับขนาดรูปให้พอดีกับหน้าจอมือถือ */
+    }
+  }
+/* สไตล์สำหรับปุ่มกลับ */
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+  

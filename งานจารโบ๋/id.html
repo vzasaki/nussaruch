@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กู้รหัสผ่าน</title>
+    <script>
+    function startCooldown(button) {
+      const cooldownTime = 15; // คูลดาวน์ 30 วินาที
+      let timeLeft = cooldownTime;
+
+      // ตั้งค่าปุ่มเมื่อเริ่มคูลดาวน์
+      button.disabled = true; 
+      button.classList.add("cooldown"); // เพิ่มคลาสสำหรับคูลดาวน์
+      button.classList.remove("hoverable"); // ลบคลาส hoverable ชั่วคราว
+      button.value = `กรุณารอ ${timeLeft} วินาที`;
+
+      // ตั้งตัวจับเวลา
+      const interval = setInterval(() => {
+        timeLeft--;
+        button.value = `กรุณารอ ${timeLeft} วินาที`;
+
+        if (timeLeft <= 0) {
+          clearInterval(interval); // หยุดตัวจับเวลา
+          button.disabled = false; // เปิดใช้งานปุ่มอีกครั้ง
+          button.classList.remove("cooldown"); // ลบคลาสคูลดาวน์
+          button.classList.add("hoverable"); // เพิ่มคลาส hoverable กลับมา
+          button.value = "ส่ง";
+        }
+      }, 1000); // อัปเดตทุก 1 วินาที
+    }
+    
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>กู้คืนรหัสผ่าน</h2>
+
+    <form>
+      <!-- ช่องกรอกอีเมล -->
+      <label for="email">อีเมล:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <input type="button" value="ส่ง" onclick="startCooldown(this)"><br>
+
+      <!-- ช่องกรอกหมายเลขโทรศัพท์ -->
+      <label for="phone">หมายเลขโทรศัพท์:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <input type="button" value="ส่ง" onclick="startCooldown(this)"><br><br>
+
+      <!-- ปุ่มกู้คืนรหัสผ่าน -->
+      <a href="login.html" class="buttonBack">กู้คืนรหัสผ่าน</a>
+      <link rel="stylesheet" href="id.css">
+    </form>
+  </div>
+</body>
+</html>

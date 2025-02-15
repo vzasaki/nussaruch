@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faculty-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    text-align: left;
+}
+
+.faculty-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.faculty-card h3 {
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.faculty-card ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.faculty-card li {
+    font-size: 14px;
+    padding: 3px 0;
+}
+
+.faculty-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.faculty-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faculty-card a:hover {
+    text-decoration: underline;
+}
+
+/* สไตล์สำหรับปุ่มไปหน้าต่อไป */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,46 @@
+/* กำหนดพื้นฐานการแสดงผล */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container หลัก */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ชื่อหัวข้อ */
+h1 {
+    color: #388e3c;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ข้อความที่แสดงผลการสมัคร */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* ลิงค์กลับสู่หน้าหลัก */
+.back-to-home {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #388e3c;
+    font-size: 1.1em;
+}
+
+.back-to-home:hover {
+    color: #45a049;
+}

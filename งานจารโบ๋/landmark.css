@@ -1,0 +1,104 @@
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+    padding: 0 15px;
+}
+
+/* การจัดการ container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* หัวข้อหลัก */
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* การจัดวางการ์ดสถานที่ */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* การ์ดสถานที่ */
+.place-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.place-card h2 {
+    font-size: 1.6rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.place-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ปรับขนาดเมื่อหน้าจอเล็กลง */
+@media screen and (max-width: 768px) {
+    .place-card {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+/* ปุ่มกลับไปที่หน้าหลัก */
+.back-button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    transform: scale(0.98);
+}

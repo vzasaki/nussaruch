@@ -1,0 +1,372 @@
+/* ค่าเทอม */
+.tuition {
+    background-color: #f0f9f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tuition h2 {
+    color: #388e3c;
+}
+
+.tuition ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tuition li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tuition li strong {
+    font-weight: bold;
+}
+
+/* แนะนำคณะ */
+.faculties {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.faculties h2 {
+    color: #ff7043;
+}
+
+.faculties ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.faculties li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faculties li a {
+    color: #ff7043;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.faculties li a:hover {
+    color: #fff;
+    background-color: #ff7043;
+    border-radius: 5px;
+}
+
+/* ติดต่อเรา */
+.contact {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact h2 {
+    color: #1976d2;
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact li a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.contact li a:hover {
+    color: #fff;
+    background-color: #1976d2;
+    border-radius: 5px;
+}
+/* Reset the margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Navigation and Links */
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Back Button */
+.back-button {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.2em;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.back-button:hover {
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.home {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+.introduction {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.universities ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.universities li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.universities li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.universities li a:hover {
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.news p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #ffffff;
+    color: rgb(24, 24, 24);
+    padding: 20px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        width: 95%;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+
+
+.topup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topup-button:hover {
+    background-color: #45a049;
+}
+
+
+/* ปุ่มสมัครสมาชิก */
+.signup-button {
+    position: absolute;
+    top: 10px;
+    right: 120px; /* ห่างจากขอบขวาเล็กน้อยจากปุ่มเติมเงิน */
+    background-color: #45a049;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-button:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    position: sticky;
+    top: 20px;
+    left: 50px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    width: 100%;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 250px; /* กำหนดขนาดของปุ่ม */
+    text-align: center;
+    background-color: #4CAF50; /* สีเขียว */
+    color: white; /* สีข้อความเป็นสีขาว */
+  }
+  
+  .button:hover {
+    opacity: 0.8; /* เอฟเฟกต์เมื่อเอาเมาส์ไปวาง */
+  }
+  
+  .extra-info {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extra-info h2 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.extra-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extra-info li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 45%;
+    max-width: 300px;
+}
+
+.extra-info li a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.extra-info li a:hover {
+    color: #fff;
+    background-color: #2e7d32;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .extra-info li {
+        width: 100%;
+        max-width: none;
+    }
+}

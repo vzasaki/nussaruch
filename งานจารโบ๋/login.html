@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- เชื่อมต่อกับไฟล์ CSS -->
+    <link rel="stylesheet" href="login.css">
+    </head>
+<body>
+    <!-- กล่องคอนเทนเนอร์หลัก -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- ฟอร์มสำหรับล็อกอิน -->
+        <form id="loginForm">
+            <!-- กลุ่มอินพุตสำหรับกรอก Username -->
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้งาน:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <!-- กลุ่มอินพุตสำหรับกรอก Password -->
+            <div class="input-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+             <div class="one">
+                <input type="checkbox" id="register-check">
+                <label for="register-check">จดจำรหัสผ่าน</label>
+            </div>
+            <!-- ลิงก์ด้านล่างของฟอร์ม -->
+            <div class="footer-links">
+                <!-- ลิงก์สำหรับสมัครสมาชิกใหม่ -->
+                <a href="noid.html" class="left-link"><span>ไม่มีรหัสผ่าน?</span></a>
+                <!-- ลิงก์สำหรับกรณีลืมรหัสผ่านหรือชื่อผู้ใช้ -->
+                <a href="id.html" class="right-link"><span>จำรหัสผ่านไม่ได้?</span></a>
+            </div>
+            <!-- ปุ่มสำหรับล็อกอิน -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="home.html" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; text-align: center;">
+                    Log In
+                </a>
+            </div>
+            <!-- พื้นที่แสดงข้อความข้อผิดพลาด -->
+            <p id="errorMessage" class="error-message"></p>
+        </form>
+    </div>
+</body>
+</html>
